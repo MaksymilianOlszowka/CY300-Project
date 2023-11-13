@@ -1,8 +1,14 @@
+################################################################################
+# Cadets: Ian Campbell and Maksymilian Olszowka
+# CY300 Project Milestone 2
+# Version 0.2
+# 12 NOVEMBER 2023
+################################################################################
 import csv
 import matplotlib.pyplot as py
     
 exit = False
-fileName = "Project/smoking.csv"
+fileName = "smoking.csv"
 columnNames = []
 rows = []
 
@@ -125,14 +131,35 @@ while (exit == False) :
             # use matplotlib methods and functions to create the plot
             # according to user choice
             
+            match (userInputGraph) :
+                case (1) :
+                    print("\nTODO: PIE GRAPH SETTINGS AND DATA INPUT\n")   
+                    
+                case (2) :
+                    print("\nTODO: LINE GRAPH SETTINGS AND DATA INPUT\n")
+                    
+                case (3) :
+                    print("\nTODO: BAR GRAPH SETTINGS AND DATA INPUT\n")
+                    
+                case (4) :
+                    print("\nTODO: SCATTER PLOT SETTINGS AND DATA INPUT\n")
+            
         case (3) :
             print("\nNew or existing country?")
             print("\n\t1. New\n\t2. Existing")
             
-            userInputCountry = int(input("\nEnter choice here : "))
+            userInputCountry2 = int(input("\nEnter choice here : "))
             # create functions or use pre built ones in Python csv
             # to append new data to the dataset
             
+            match (userInputCountry2) :
+                case (1) :
+                    print("\nTODO: TAKE USER INPUT TO APPEND A NEW COUNTRY\n")
+                    
+                case (2) :
+                    print("\nTODO: USR INP TO APPEND PREEXISTING COUNTRY\n")
+                    
         case (4) :
             print("\nGoodbye!\n")
+            
             exit = True
