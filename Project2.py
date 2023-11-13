@@ -1,7 +1,7 @@
 ################################################################################
 # Cadets: Ian Campbell and Maksymilian Olszowka
 # CY300 Project Milestone 2
-# Version 0.2
+# Version 0.2.2
 # 12 NOVEMBER 2023
 ################################################################################
 import csv
@@ -20,9 +20,9 @@ with open(fileName, mode = 'r') as (inFile) :
         rows.append(row)
         
 class Data :
-    def __init__(self, countryName: str, rows: list, countryYear: str = None,
-                 sex: str = None) :        
-        self.countryName = countryName
+    def __init__(self, rows: list, countryName: str = None, 
+                 countryYear: str = None, sex: str = None) :        
+        self.countryName = countryName if countryName != None else None
         self.dailyCigarettes = 0
         self.percentageMale = 0
         self.percentageFemale = 0
