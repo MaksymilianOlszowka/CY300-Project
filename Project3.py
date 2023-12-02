@@ -1,8 +1,8 @@
 ################################################################################
 # Cadets: Ian Campbell and Maksymilian Olszowka
-# CY300 Project Milestone 2
-# Version 0.2.2
-# 12 NOVEMBER 2023
+# CY300 Final Project Draft
+# Version 0.3.0
+# 02 DECEMBER 2023
 ################################################################################
 # Must include a custom class
 # Must include 4 Summary Statistics (e.g. min, max, mean, median, mode)
@@ -25,6 +25,13 @@ import matplotlib.pyplot as py
 # Class that will have a method to display summary statistics, filter the data
 # by a certain column, graph the data, and add a new row of data to the dataset
 # The class will allow you to filter the data by country as well
+
+# Generally, we need to work on the following:
+# All graphing options
+# Test cases
+# Error handling (e.g. if user enters a string when they should enter an int)
+# Documentation
+# If possible, keep lines within the 80 character limit
 
 class Data :
     def __init__(self) -> None :
